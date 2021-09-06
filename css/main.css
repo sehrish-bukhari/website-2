@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'poppins';
+}
+
+.header {
+  text-align: center;
+  min-height: 100vh;
+  padding: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url("../images/banner.png");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  opacity: 80%;
+  color: white;
+}
+
+.header .logo {
+  width: 15em;
+  height: 5em;
+}
+
+.header nav {
+  display: none;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.header .fa-bars {
+  cursor: pointer;
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+
+.header .text-nav {
+  position: absolute;
+  text-align: center;
+  top: 20em;
+}
+
+.header .text-nav h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.header .text-nav p {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.header .btn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.header .btn:hover {
+  background-color: #ff0000;
+}
+
+.course {
+  margin-top: 6%;
+}
+
+.course h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.course p {
+  text-align: center;
+  color: #898585;
+  margin: 1em 0 2em 0;
+}
+
+.course ul li {
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
+  background-color: #f3e7e9;
+  text-align: center;
+  border: 1px solid #d4cfcf;
+  width: 70%;
+  list-style: none;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.course ul li p {
+  color: #736f6f;
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.campus {
+  margin-top: 6%;
+}
+
+.campus h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.campus p {
+  text-align: center;
+  color: #898585;
+  margin: 1em 0 2em 0;
+}
+
+.campus .our-campus {
+  text-align: center;
+}
+
+.campus .our-campus div {
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 1em;
+}
+
+.campus .our-campus div img {
+  width: 80%;
+  border-radius: 1em;
+}
+
+.campus .our-campus div div {
+  margin-left: 35%;
+  padding: 1em;
+  position: absolute;
+  margin-top: -3em;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
+}
+
+.campus .our-campus div div h1 {
+  text-align: center;
+}
+
+.facilites {
+  margin-top: 6%;
+}
+
+.facilites h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.facilites p {
+  text-align: center;
+  color: #898585;
+  margin: 1em 0 2em 0;
+}
+
+.facilites li {
+  text-align: center;
+  list-style: none;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.facilites li img {
+  width: 15em;
+}
+
+.facilites li blockquote {
+  color: #736f6f;
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+.testimonial {
+  margin-top: 6%;
+}
+
+.testimonial h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.testimonial p {
+  text-align: center;
+  color: #898585;
+  margin: 1em 0 2em 0;
+}
+
+.testimonial li {
+  position: relative;
+  background-color: #f3e7e9;
+  border: 1px solid #d4cfcf;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  list-style: none;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.testimonial li img {
+  margin-top: 0.5em;
+  width: 4em;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.testimonial li blockquote {
+  margin-top: -6em;
+  margin-left: 7em;
+  color: #736f6f;
+  padding: 0.5em 0.5em 0 0.5em;
+  font-size: 0.8em;
+}
+
+.testimonial li cite {
+  padding-left: 6em;
+}
+
+.testimonial li i {
+  color: red;
+}
+
+.testimonial li #current {
+  margin-left: 6.3em;
+}
+
+.call-to-action {
+  margin-top: 6%;
+}
+
+.call-to-action .container {
+  margin-top: 6%;
+  text-align: center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../images/banner2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/banner2.jpg");
+}
+
+.call-to-action .container h1 {
+  color: white;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.call-to-action .container .btn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.call-to-action .container .btn:hover {
+  background-color: #ff0000;
+}
+
+.footer {
+  margin-top: 6%;
+}
+
+.footer .container {
+  text-align: center;
+}
+
+.footer .container h4 {
+  text-align: center;
+}
+
+.footer .container p {
+  font-size: 0.8em;
+  padding: 0 1em 0 1em;
+  text-align: center;
+  color: #898585;
+  margin: 1em 0 2em 0;
+}
+
+.footer .container ul span {
+  color: red;
+}
+
+.footer .container ul span i {
+  margin-bottom: 2em;
+  padding: 0.1em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #f2f2f2;
+  height: 100vh;
+  padding: 1em;
+  opacity: 95%;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: #030303;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: blue;
+}
+
+.mobile-cross {
+  padding-right: 1em;
+  float: right;
+  cursor: pointer;
+  margin: .5em;
+}
+
+@media screen and (min-width: 363px) {
+  .header .logo {
+    width: 10em;
+    height: 4em;
+  }
+  .header .text-nav {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+  .header .text-nav h1 {
+    text-align: center;
+    margin-top: -3em;
+    font-size: 1em;
+  }
+  .header .text-nav p {
+    text-align: center;
+    font-size: .8em;
+  }
+  .course .container h1 {
+    font-size: 1.4em;
+  }
+  .course .container p {
+    font-size: 1em;
+  }
+  .course .container ul li {
+    width: 80%;
+    margin-left: 2.5em;
+  }
+  .course .container ul li p {
+    font-size: .9em;
+  }
+  .campus h1 {
+    font-size: 1.4em;
+  }
+  .facilites h1 {
+    font-size: 1.4em;
+  }
+  .facilites ul li {
+    margin: 0%;
+  }
+  .facilites ul li img {
+    width: 80%;
+  }
+  .facilites ul li blockquote {
+    font-size: .9em;
+  }
+  .testimonial h1 {
+    font-size: 1.4em;
+  }
+  .testimonial ul li blockquote {
+    font-size: .7em;
+  }
+  .call-to-action .container h1 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 496px) {
+  .header .logo {
+    width: 10em;
+    height: 4em;
+  }
+  .header .text-nav {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+  .header .text-nav h1 {
+    text-align: center;
+    margin-top: -2em;
+    font-size: 2em;
+  }
+  .header .text-nav p {
+    text-align: center;
+    font-size: 1em;
+  }
+  .campus h1 {
+    font-size: 1.4em;
+  }
+  .campus .our-campus div {
+    margin-left: .5em;
+  }
+}
+
+@media screen and (min-width: 943px) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .header .mobile-cross, .header .fa-bars {
+    display: none;
+  }
+  .header .text-nav {
+    margin-top: 0;
+  }
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    color: white;
+    font-size: 1em;
+    padding: 1em 1em;
+  }
+  ul li .one {
+    margin-left: 20em;
+  }
+  .course .container ul {
+    text-align: center;
+  }
+  .course .container ul li {
+    margin: 2%;
+  }
+  .campus .container ul {
+    text-align: center;
+  }
+  .campus .container ul li {
+    margin: 1.2%;
+  }
+  .campus .container ul li div {
+    margin: 5%;
+  }
+  .campus .container ul li div img {
+    width: 17.5em;
+    height: 18em;
+  }
+  .campus .container ul li div div {
+    margin-top: -8%;
+    margin-left: 5%;
+  }
+  .facilites .container ul li img {
+    height: 17em;
+  }
+  .footer ul span {
+    margin-left: 45%;
+  }
+}
+
+@media screen and (min-width: 988px) {
+  .header .text-nav {
+    margin-left: 5%;
+  }
+  .campus .container ul {
+    text-align: center;
+  }
+  .campus .container ul li {
+    margin: 1.2%;
+  }
+  .campus .container ul li div {
+    margin-left: 10%;
+  }
+  .campus .container ul li div img {
+    width: 17.5em;
+    height: 18em;
+  }
+}
+
+@media screen and (min-width: 988px) {
+  .header .text-nav {
+    margin-left: 6%;
+  }
+  .header .one {
+    margin-left: 25em;
+  }
+  .campus .container ul {
+    text-align: center;
+  }
+  .campus .container ul li {
+    margin: 1.2%;
+  }
+  .campus .container ul li div {
+    margin-left: 20%;
+  }
+  .campus .container ul li div img {
+    width: 17.5em;
+    height: 18em;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .header .text-nav {
+    margin-top: 8%;
+    margin-left: 20%;
+  }
+  .header .one {
+    margin-left: 60em;
+    font-weight: bold;
+  }
+  .course .container ul {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .course .container ul li {
+    left: 10%;
+  }
+  .campus .container div ul {
+    margin-left: 5%;
+    margin-right: 20%;
+  }
+  .campus .container div ul li img {
+    width: 25em;
+  }
+  .campus .container div ul li div h3 {
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+  .testimonial .container ul {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .testimonial .container ul li blockquote {
+    font-size: 1em;
+    padding-top: 1em;
+    margin-left: 12%;
+  }
+  .testimonial .container ul li cite {
+    margin-left: -2%;
+  }
+  .call-to-action .container {
+    height: 20em;
+  }
+  .call-to-action .container h1 {
+    font-size: 3em;
+    margin-top: 5%;
+    margin-bottom: -1%;
+  }
+  .footer .container ul span {
+    width: 8em;
+  }
+  .footer .container ul span i {
+    margin-left: .2em;
+  }
+  .footer .container ul span #current {
+    margin-left: 2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
